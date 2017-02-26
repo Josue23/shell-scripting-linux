@@ -10,14 +10,14 @@
 # echo -n "Enter a name of a file or a directory: "
 # read text
 
-if [ -f "$1" ]
+if [ -f "$@" ]
 then
-    echo "$1 is a regular file."
-elif [ -d "$1" ]
+    echo "$@ is a regular file."
+elif [ -d "$@" ]
 then
-    echo "$1 is a directory."
+    echo "$@ is a directory."
 else
-    echo "$1 is not a regular file nor a directory."
+    echo "$@ is not a regular file nor a directory."
 fi
 
-echo "$(ls -l $1) "
+echo "$(ls -l $@) "
