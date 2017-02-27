@@ -5,3 +5,5 @@
 SERVER_NAME=$(hostname)
 
 echo "This script is running on ${SERVER_NAME}."
+TODAY=$(date +"%m-%d-%Y")
+echo "Today is " $TODAY
